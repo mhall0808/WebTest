@@ -1,0 +1,18 @@
+console grab 9730 TOC:
+
+$.getJSON("/d2l/api/le/1.7/9730/content/toc", function (data) {console.log(data)})
+
+
+Enable json data on firefox
+
+$.ajaxSetup({'beforeSend': function(xhr){
+                            if (xhr.overrideMimeType)
+                                xhr.overrideMimeType("text/plain");
+                            }
+                        });
+
+
+
+
+Grades
+$.getJSON("/d2l/api/le/1.7/9730/grades/")
